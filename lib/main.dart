@@ -17,18 +17,15 @@ class Home extends StatelessWidget {
             backgroundColor: Colors.red,
           ),
           body: Center(
-            child: Text(
-              'I am the body',
-              style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey[600],
-                  fontFamily: 'IndieFlower'
-              ),
-            ),
+            child: IconButton(
+               onPressed: () {
+                 print('you clicked me');
+               },
+                icon: Icon(Icons.access_alarms)
+            )
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () => 1,
+            onPressed: () => {},
             child: Text("click"),
             backgroundColor: Colors.red[600],
           ),
